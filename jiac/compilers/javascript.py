@@ -3,8 +3,7 @@ import subprocess
 from . import CompilerMeta
 
 
-class JavaScriptCompiler(object):
-    __metaclass__ = CompilerMeta
+class JavaScriptCompiler(object, metaclass=CompilerMeta):
     supported_mimetypes = ['application/javascript', 'text/javascript', 'text/coffeescript']
 
     @classmethod

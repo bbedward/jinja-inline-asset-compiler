@@ -4,8 +4,7 @@ import subprocess
 from . import CompilerMeta
 
 
-class LessCompiler(object):
-    __metaclass__ = CompilerMeta
+class LessCompiler(object, metaclass=CompilerMeta):
     supported_mimetypes = ['text/less', 'text/css']
 
     @classmethod
